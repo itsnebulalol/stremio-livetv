@@ -174,4 +174,4 @@ cython_debug/
 .pypirc
 
 # stremio-livetv
-config.example.json
+config.json
