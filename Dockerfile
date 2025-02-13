@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y curl
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
 WORKDIR $PYSETUP_PATH
-COPY stremio-livetv ./stremio-livetv
+COPY stremio_livetv ./stremio_livetv
 COPY LICENSE README.md pyproject.toml poetry.lock ./
 
 RUN poetry build --format wheel
