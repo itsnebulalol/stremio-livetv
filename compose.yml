@@ -1,0 +1,9 @@
+services:
+  stremio-livetv:
+    build: .
+    container_name: stremio-livetv
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./config.json:/app/config.json
+    restart: unless-stopped
